@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="path/to/your/style.css">
     <style>
-        <style>
         body {
             background-image: url('https://images.unsplash.com/photo-1603481588273-2f908a9a7a1b?q=80&w=4140&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
             background-size: cover;
@@ -46,20 +45,39 @@
 
 <body>
     <div class="centered-title">
-        SMB07 
+       <h1>SMB07</h1>
     </div>
-
-    <nav class="navbar">
-        <ul class="nav-links">
-            <li><a href="typography.html">Typography</a></li>
-            <li><a href="colors.html">Colors</a></li>
-            <li><a href="buttons.html">Buttons</a></li>
-            <li><a href="cards.html">Cards</a></li>
-            <li><a href="alerts.html">Alerts</a></li>
-            <li><a href="carousel.html">Carousel</a></li>
-            <li><a href="navigation.html">Navigation</a></li>
-        </ul>
-    </nav>
+    <h1>Nav Bar</h1>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid justify-content-center"> <!-- Added justify-content-center -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#typography">Typography</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#colors">Colors</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#buttons">Buttons</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#cards">Cards</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#alerts">Alerts</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#carousel">Carousel</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#navigation">Navigation</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
 
 <head>
 
@@ -119,7 +137,7 @@
     <h1>Buttons</h1>
     <section>
         <!-- Adding spacing between groups of buttons, cards, and alerts using Bootstrap's spacing utilities -->
-    
+        <h1>Large Icons</h1>
         <!-- Large Buttons -->
         <div class="mb-3"> <!-- Increased bottom margin for spacing between button groups -->
            <div class="mb-2"> <!-- Margin bottom for spacing between groups -->
@@ -134,7 +152,8 @@
                 <button type="button" class="btn btn-link btn-lg me-2">Link</button>
     
         </div>
-    
+        
+        <h2>Medium Icons</h2>
         <!-- Medium Buttons -->
         <div class="mb-3"> <!-- Increased bottom margin for spacing between button groups -->
             <div class="mb-2"> <!-- Margin bottom for spacing between groups -->
@@ -149,7 +168,7 @@
                 <button type="button" class="btn btn-link me-2">Link</button>
     
         </div>
-    
+        <h3>Small Icons</h3>
         <!-- Small Buttons -->
         <div class="mb-5"> <!-- Increased bottom margin for more spacing before the cards -->
             <div class="mb-2"> <!-- Margin bottom for spacing between groups -->
@@ -175,7 +194,7 @@
             <div class="row g-3"> <!-- g-3 class adds spacing between the grid columns -->
                 <div class="col-md-4">
                     <div class="card" style="width: 18rem;">
-                        <img src="https://images.unsplash.com/photo-1707343844436-37580f155ed2?q=80&w=4140&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="Placeholder Image">
+                        <img src="https://images.unsplash.com/photo-1490810194309-344b3661ba39?q=80&w=3840&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="Placeholder Image">
                         <div class="card-body">
                             <h5 class="card-title">Card Title</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -185,7 +204,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="card" style="width: 18rem;">
-                        <img src="https://images.unsplash.com/photo-1711598850151-f6248961419e?q=80&w=4075&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Da" class="card-img-top" alt="Placeholder Image 2">
+                        <img src="https://images.unsplash.com/photo-1633545505446-586bf83717f0?q=80&w=4144&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="Placeholder Image 2">
                         <div class="card-body">
                             <h5 class="card-title">Card Title</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -237,7 +256,7 @@
                     <div class="card" style="width: 18rem;">
                         <div class="card-body">
                             <h5 class="card-title">Card Title</h5>
-                            <p class="card-text">The third card without an image also maintains a consistent look and feel.</p>
+                            <p class="card-text">This is another card without an image. It follows the same clean layout as the others.</p>
                             <a href="#" class="btn btn-primary">Go somewhere</a>
                         </div>
                     </div>
@@ -250,22 +269,9 @@
         
         <h1>Alerts</h1>
         <!-- Alerts -->
-        <div class="bd-example mb-3"> <!-- Margin bottom for spacing between individual alerts -->
-            <div class="bd-example">                
+        <div class="bd-example">                
             <div class="alert alert-primary alert-dismissible fade show" role="alert">
                 A simple primary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
-                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-            </div>
-        </div>
-        <div class="bd-example">
-            <div class="alert alert-solid alert-primary rounded-0 alert-dismissible fade show " role="alert">
-                <span> This is a warning alert—check it out!</span>
-                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-            </div>
-        </div>
-        <div class="bd-example">
-            <div class="alert alert-primary rounded-0 alert-dismissible fade show " role="alert">
-                <span> This is a warning alert—check it out!</span>
                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
         </div>
@@ -332,9 +338,6 @@
                 <button type="button" class="btn-close btn-close-white" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
         </div>
-    </div>
-    
-        </div>
     
       
         <h1>Carousal Design</h1>
@@ -377,5 +380,6 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

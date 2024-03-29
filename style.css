@@ -1,88 +1,85 @@
-/* Resetting default browser styles */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+/* Reset margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Body and background styles */
+/* Global styles */
+body, html {
+    width: 100%;
+    font-family: 'Space Mono', monospace;
+}
+
 body {
-  background-image: url('https://images.unsplash.com/photo-1603481588273-2f908a9a7a1b?q=80&w=4140&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  margin: 0;
-  font-family: 'Space Mono', monospace;
+    background-image: url('https://images.unsplash.com/photo-1603481588273-2f908a9a7a1b?q=80&w=4140&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 50px; /* Adjust as needed for your layout */
 }
 
-/* Navigation styles */
+/* Content Container styles */
+.content-container {
+    background-color: #fff; /* White background for content */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    padding: 20px;
+    margin: 30px; /* Spacing around the container */
+    max-width: 1200px; /* Max width of the content area */
+    width: 100%; /* Responsive width */
+}
+
+/* Navigation bar styles */
 .navbar {
-  background-color: rgba(0, 0, 0, 0.7); /* semi-transparent background */
-  border-radius: 8px;
-  padding: 1rem;
-  margin-bottom: 2rem;
+    background-color: #333; /* Dark background for navbar */
+    color: white;
+    margin-bottom: 20px; /* Spacing after the navbar */
+    border-radius: 8px;
+    padding: 10px 0; /* Padding inside the navbar */
 }
 
-.nav-links li {
-  display: inline;
-  margin-right: 1rem;
+.navbar .nav-links {
+    list-style-type: none;
 }
 
-.nav-links a {
-  color: white;
-  text-decoration: none;
-  padding: 0.5rem 1rem;
-  background-color: #007bff;
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
+.navbar .nav-links li {
+    display: inline;
+    margin-right: 10px; /* Spacing between nav items */
 }
 
-.nav-links a:hover {
-  background-color: #0056b3;
+.navbar .nav-links li a {
+    color: white;
+    text-decoration: none;
 }
 
 /* Card styles */
 .card {
-  background-color: #fff;
-  border-radius: 15px;
-  padding: 1rem;
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
-  margin: 1rem;
+    background-color: #f8f9fa; /* Bootstrap's default card color */
+    margin-bottom: 1rem;
+    border-radius: 0.25rem; /* Rounded corners for cards */
 }
 
 .card-img-top {
-  border-radius: 12px;
-  width: 100%;
-  height: auto;
+    width: 100%;
+    height: 200px; /* Fixed height for images */
+    object-fit: cover; /* Cover the area of the image container */
+    border-top-left-radius: inherit; /* Rounded corners - top left */
+    border-top-right-radius: inherit; /* Rounded corners - top right */
 }
 
 .card-body {
-  padding: 1rem;
+    padding: 1rem; /* Padding inside the card */
 }
 
-/* Button styles */
-.btn {
-  border: none;
-  padding: 0.5rem 1rem;
-  margin: 0.5rem;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.btn-primary {
-  background-color: #007bff;
-  color: white;
-}
-
-.btn-primary:hover {
-  background-color: #0056b3;
-}
-
-/* Color block styles */
+/* Color blocks for the color palette */
 .color-block {
-  height: 100px;
-  border-radius: 10px;
-  margin-bottom: 1rem;
+    height: 100px;
+    border-radius: 10px;
+    margin-bottom: 10px;
 }
 
 .primary-color-1 { background-color: #007bff; }
@@ -94,14 +91,103 @@ body {
 
 /* Typography styles */
 h1, h2, h3, h4, p {
-  color: white;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+    margin: 20px 0;
 }
 
-/* Responsive media query */
-@media (max-width: 768px) {
-  .nav-links li {
-    display: block;
-    margin-bottom: 0.5rem;
-  }
+/* Adjustments for the carousel */
+.carousel-inner img {
+    width: 100%;
+    height: auto; /* Adjust the height to maintain aspect ratio */
+}
+
+.carousel-item {
+    height: 400px; /* Set the height of the carousel items */
+    overflow: hidden;
+    }
+  
+  .carousel-item img {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    }
+  
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 5%;
+    height: 100%;
+    background: none;
+    border: none;
+    }
+  
+  .carousel-control-prev {
+    left: 0;
+    }
+  
+  .carousel-control-next {
+    right: 0;
+    }
+/* Google Material Design inspired styles */
+.navbar {
+    background-color: #424242; /* Material Grey */
+    box-shadow: 0 2px 4px rgba(0,0,0,.5); /* Material shadow */
+}
+
+.nav-link {
+    color: rgba(255,255,255,.75); /* Material text color */
+    transition: color .3s ease;
+}
+
+.nav-link:hover {
+    color: #ffffff; /* Material text hover color */
+}
+
+.navbar-brand {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* Adjustments for the active state */
+.navbar-nav .nav-link.active,
+.navbar-nav .show>.nav-link {
+    color: #ffffff; /* Material active text color */
+    background-color: #1976d2; /* Material Blue */
+    border-radius: .25rem; /* Optional: for rounded corners */
+}
+
+/* Optional: override Bootstrap padding for nav items */
+.navbar-nav .nav-item {
+    padding-left: .5rem;
+    padding-right: .5rem;
+}
+@media (min-width: 992px) { /* Adjusting for Bootstrap's LG breakpoint */
+    .navbar-nav {
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+    }
+}
+.bd-example .alert {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically (useful for alerts with icons) */
+    text-align: center; /* Ensure text is centered */
+}
+
+/* Adjust svg icons alignment if necessary */
+.bd-example .alert svg {
+    margin-right: .5rem; /* Add some space between the icon and the text */
+}
+
+/* Specific adjustments for alerts with close buttons */
+.alert-dismissible {
+    justify-content: space-between; /* Adjusts space between content and close button */
+}
+
+/* Since the .alert-dismissible makes the button go to the right, 
+   we need to wrap text and icons in a div to center them together */
+.alert-dismissible .alert-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1; /* Make sure this container fills the space left by the close button */
 }
