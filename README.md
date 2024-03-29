@@ -1,1 +1,0 @@
-# smb07_design_system

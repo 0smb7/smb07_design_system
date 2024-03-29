@@ -1,0 +1,107 @@
+/* Resetting default browser styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Body and background styles */
+body {
+  background-image: url('https://images.unsplash.com/photo-1603481588273-2f908a9a7a1b?q=80&w=4140&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  margin: 0;
+  font-family: 'Space Mono', monospace;
+}
+
+/* Navigation styles */
+.navbar {
+  background-color: rgba(0, 0, 0, 0.7); /* semi-transparent background */
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+.nav-links li {
+  display: inline;
+  margin-right: 1rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+  background-color: #0056b3;
+}
+
+/* Card styles */
+.card {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 1rem;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  margin: 1rem;
+}
+
+.card-img-top {
+  border-radius: 12px;
+  width: 100%;
+  height: auto;
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+/* Button styles */
+.btn {
+  border: none;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* Color block styles */
+.color-block {
+  height: 100px;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.primary-color-1 { background-color: #007bff; }
+.primary-color-2 { background-color: #28a745; }
+.primary-color-3 { background-color: #dc3545; }
+.secondary-color-1 { background-color: #6c757d; }
+.secondary-color-2 { background-color: #17a2b8; }
+.secondary-color-3 { background-color: #ffc107; }
+
+/* Typography styles */
+h1, h2, h3, h4, p {
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+/* Responsive media query */
+@media (max-width: 768px) {
+  .nav-links li {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+}
